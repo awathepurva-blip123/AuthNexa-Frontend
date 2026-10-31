@@ -67,6 +67,7 @@ function NewPassword() {
           otp: otp.trim(),
           newPassword: password,
         }
+      
       );
 
       // The backend validates the OTP and resets the password.
