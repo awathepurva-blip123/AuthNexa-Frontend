@@ -36,7 +36,7 @@ function Signup() {
     try {
       // Change this URL to match your backend registration endpoint.
       const response = await fetch(
-        " https://authnexa-backend.onrender.com/api/auth/register",
+        `${import.meta.env.VITE_API_URL}/api/auth/register`,
         {
           method: "POST",
           headers: {

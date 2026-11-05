@@ -14,7 +14,7 @@ function ResetPassword() {
 
       // Replace this URL with your actual backend OTP verification endpoint.
       const response = await axios.post(
-        " https://authnexa-backend.onrender.com/api/auth/send-reset-otp",
+        `${import.meta.env.VITE_API_URL}/api/auth/send-reset-otp`,
         {
           email
         }
