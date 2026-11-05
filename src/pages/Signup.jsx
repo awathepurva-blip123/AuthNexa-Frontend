@@ -36,7 +36,7 @@ function Signup() {
     try {
       // Change this URL to match your backend registration endpoint.
       const response = await fetch(
-        "http://localhost:3000/api/auth/register",
+        " https://authnexa-backend.onrender.com/api/auth/register",
         {
           method: "POST",
           headers: {

@@ -61,7 +61,7 @@ function NewPassword() {
 
       // Send email, OTP, and new password to the backend.
       const response = await axios.post(
-        "http://localhost:3000/api/auth/reset-password",
+        " https://authnexa-backend.onrender.com/api/auth/reset-password",
         {
           email: email.trim(),
           otp: otp.trim(),

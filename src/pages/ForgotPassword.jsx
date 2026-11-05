@@ -13,7 +13,7 @@ Forgot Password? </h1>
       to="/login"
       className="mt-7 inline-block text-sm font-medium text-blue-400 underline hover:text-blue-300"
     >
-      Back to Login
+    Back to Login
     </Link>
   </section>
 </main>
