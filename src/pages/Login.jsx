@@ -52,8 +52,9 @@ function Login() {
       }
 
       // Store authentication token if returned by backend.
-      if (data.token) {
-        localStorage.setItem("token", data.token);
+      if (data.success) {
+        // localStorage.setItem("token", data.token);
+        navigate("/dashboard");
       }
 
       setSuccess(data.message || "Login successful!");

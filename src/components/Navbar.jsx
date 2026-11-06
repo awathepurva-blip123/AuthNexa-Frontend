@@ -7,11 +7,16 @@ function Navbar() {
   const isHome = location.pathname === "/";
   const isSignup = location.pathname === "/signup";
   const isResetPassword = location.pathname === "/reset-password";
+  const isDashboard = location.pathname === "/dashboard";
 
   return (
-    <nav className="absolute left-0 top-0 z-20 flex w-full items-center justify-between bg-transparent px-6 py-5 sm:px-10">
-
-      {/* AuthNexa Logo */}
+    <nav
+      className={`relative z-20 flex w-full items-center justify-between px-6 py-5 sm:px-10 ${
+        isDashboard
+          ? "bg-[#111c33] border-b border-white/10"
+          : "absolute left-0 top-0 bg-transparent"
+      }`}
+    >
       <Link to="/" className="flex items-center">
         <img
           src="/AuthNexa.png"
@@ -20,7 +25,6 @@ function Navbar() {
         />
       </Link>
 
-      {/* Navigation Buttons */}
       {isHome && (
         <Link
           to="/login"
@@ -47,7 +51,6 @@ function Navbar() {
           Back
         </Link>
       )}
-
     </nav>
   );
 }

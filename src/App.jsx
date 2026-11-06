@@ -1,9 +1,9 @@
 import { Navigate, Route, Routes } from "react-router-dom";
-
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
+import Dashboard from "./pages/Dashboard";
 import ResetPassword from "./pages/ResetPassword";
 import NewPassword from "./pages/NewPassword.jsx";
 
@@ -22,13 +22,16 @@ function App() {
         {/* Third Image: Login Page */}
         <Route path="/login" element={<Login />} />
 
-        {/* Fourth Image: Reset Password Page */}
+        {/* Fourth Image: Dashboard Page */}
+        <Route path="/dashboard" element={<Dashboard />} />
+
+        {/* Fivth Image: Reset Password Page */}
         <Route
           path="/reset-password"
           element={<ResetPassword />}
         />
        
-        {/* Fivth Image: New Password */}
+        {/* Sixth Image: New Password */}
         <Route
           path="/reset-new-password"
           element={<NewPassword />}
